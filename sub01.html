@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diptyque</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="icon" href="./img/logo_web.ico">
+
+    <!-- AOS애니메이션 CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- GSAP 라이브러리 설정 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="wrap">
+            <ul class="gnb">
+                <li><a href="sub01.html">FRAGRANCES</a>
+                    <div class="gnb_bar1"></div>
+                    <ol class="sub">
+                        <li><a href="sub01-1.html">오 드 뚜왈렛</a></li>
+                        <li><a href="sub01-2.html">오 드 퍼퓸</a></li>
+                        <li><a href="sub01-3.html">기타 향수</a></li>
+                    </ol>
+                </li>
+                    <li>
+                        <a href="sub02.html">CANDLES&HOME</a>
+                        <div class="gnb_bar1"></div>
+                        <ol class="sub">
+                            <li><a href="sub02-1.html">캔들</a></li>
+                            <li><a href="sub02-2.html">디퓨저</a></li>
+                            <li><a href="sub02-3.html">방향제</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="sub03.html">HAIR&BODY</a>
+                        <div class="gnb_bar1"></div>
+                        <ol class="sub">
+                            <li><a href="sub03-1.html">에센스 / 오일 / 미스트</a></li>
+                            <li><a href="sub03-2.html">워시 / 스크럽</a></li>
+                            <li><a href="sub03-3.html">로션 / 크림 / 오일</a></li>
+                        </ol>
+                    </li>
+                <li>
+                    <a href="sub04.html">SERVICE</a>
+                    <div class="gnb_bar2"></div>
+                </li>
+                <li>
+                    <a href="sub05.html">ABOUT DIPTYQUE</a>
+                    <div class="gnb_bar2"></div>
+                </li>
+            </ul><!-- /.gnb -->
+            
+            <!-- m_gnb -->
+             <div class="m_gnb_icon">
+                <p><a href="#"><img src="img/icon_m_gnb.png" alt="모바일메뉴"></a></p>
+             </div>
+
+            <div class="logo"><a href="index.html"><img src="img/logo_header.png" alt="딥티크"></a></div>
+            <div class="icon">
+                <div class="search">
+                    <input type="text" class="search_line"></input>
+                    <img class="search_icon" src="img/icon_search.png" alt="검색">
+                    <img class="search_close" src="img/icon_big_close.png" alt="검색">
+                </div>
+                <div class="mypage"><img src="img/icon_mypage.png" alt="마이페이지"></div>
+                <div class="cart"><img src="img/icon_cart.png" alt="카트"></div>
+            </div>
+        </div><!-- wrap -->
+    </header>
+
+
+
+    <main>
+        <section id="sub01">
+            <div class="grid">
+
+                <div class="sub01_top">
+                    <h1>ALL<br>FRAGRANCES</h1>
+                    <div class="sub01_sort" >
+                        <ul>
+                            <li id="frag_li"><a href="sub01.html">전체</a></li>
+                            <li><a href="sub01-1.html">오 드 뚜왈렛</a></li>
+                            <li><a href="sub01-2.html">오 드 퍼퓸</a></li>
+                            <li><a href="sub01-3.html">기타 향수</a></li>
+                        </ul>
+                        <ol>
+                            <li>인기 순</li>
+                            <li>최신 순</li>
+                        </ol>
+                    </div>
+                </div><!-- sub01_top -->
+
+                <div class="sub01_list">
+                    <ul>
+                        <li>
+                            <p><img src="img/sub/sub1_1_01.jpg" alt="향수"></p>
+                            <p class="sub01_hover"><img src="img/sub/sub1_1_01-1.jpg" alt="향수"></p>
+                            <div class="sub01_text1">eaux de toilette</div>
+                            <div class="sub01_text2">오 드 뚜왈렛 오 데 썽 100ml</div>
+                            <div class="sub01_text3">￦240,350</div>
+                        </li>
+                        <li>
+                            <p><img src="img/sub/sub1_1_02.jpg" alt="향수"></p>
+                            <p class="sub01_hover"><img src="img/sub/sub1_1_02-1.jpg" alt="향수"></p>
+                            <div class="sub01_text1">eaux de toilette</div>
+                            <div class="sub01_text2">오 드 뚜왈렛 필로시코스 100ml</div>
+                            <div class="sub01_text3">￦240,350</div>
+                        </li>
+                        <li>
+                            <p><img src="img/sub/sub1_1_03.jpg" alt="향수"></p>
+                            <p class="sub01_hover"><img src="img/sub/sub1_1_03-1.jpg" alt="향수"></p>
+                            <div class="sub01_text1">eaux de toilette</div>
+                            <div class="sub01_text2">오 드 뚜왈렛 로 파피에 100ml</div>
+                            <div class="sub01_text3">￦240,350</div>
+                        </li>
+                        <li>
+                            <p><img src="img/sub/sub1_1_04.jpg" alt="향수"></p>
+                            <p class="sub01_hover"><img src="img/sub/sub1_1_04-1.jpg" alt="향수"></p>
+                            <div class="sub01_text1">eaux de toilette</div>
+                            <div class="sub01_text2">오 드 뚜왈렛 올렌느 100ml</div>
+                            <div class="sub01_text3">￦240,350</div>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <p><img src="img/sub/sub1_2_01.jpg" alt="향수"></p>
+                            <p class="sub01_hover"><img src="img/sub/sub1_2_01-1.jpg" alt="향수"></p>
+                            <div class="sub01_text1">eaux de parfume</div>
+                            <div class="sub01_text2">오 드 퍼퓸 플레르 드 뽀 75ml</div>
+                            <div class="sub01_text3">￦240,350</div>
+                        </li>
+                        <li>
+                            <p><img src="img/sub/sub1_2_02.jpg" alt="향수"></p>
+                            <p class="sub01_hover"><img src="img/sub/sub1_2_02-1.jpg" alt="향수"></p>
+                            <div class="sub01_text1">eaux de parfume</div>
+                            <div class="sub01_text2">리미티드 오 드 퍼퓸 오르페옹 100ml</div>
+                            <div class="sub01_text3">￦289,000</div>
+                        </li>
+                        <li>
+                            <p><img src="img/sub/sub1_2_03.jpg" alt="향수"></p>
+                            <p class="sub01_hover"><img src="img/sub/sub1_2_03-1.jpg" alt="향수"></p>
+                            <div class="sub01_text1">eaux de parfume</div>
+                            <div class="sub01_text2">오 드 퍼퓸 탐 다오 75ml</div>
+                            <div class="sub01_text3">￦240,350</div>
+                        </li>
+                        <li>
+                            <p><img src="img/sub/sub1_2_04.jpg" alt="향수"></p>
+                            <p class="sub01_hover"><img src="img/sub/sub1_2_04-1.jpg" alt="향수"></p>
+                            <div class="sub01_text1">eaux de parfume</div>
+                            <div class="sub01_text2">오 드 퍼퓸 뗌 포 75ml</div>
+                            <div class="sub01_text3">￦240,350</div>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <p><img src="img/sub/sub1_3_01.jpg" alt="향수"></p>
+                            <p class="sub01_hover"><img src="img/sub/sub1_3_01-1.jpg" alt="향수"></p>
+                            <div class="sub01_text1">Solid perfumes</div>
+                            <div class="sub01_text2">솔리드퍼퓸 필로시코스 3g</div>
+                            <div class="sub01_text3">￦98,800</div>
+                        </li>
+                        <li>
+                            <p><img src="img/sub/sub1_3_02.jpg" alt="향수"></p>
+                            <p class="sub01_hover"><img src="img/sub/sub1_3_02-1.jpg" alt="향수"></p>
+                            <div class="sub01_text1">Solid perfumes</div>
+                            <div class="sub01_text2">솔리드퍼퓸 롬브르단로 3g</div>
+                            <div class="sub01_text3">￦98,800</div>
+                        </li>
+                        <li>
+                            <p><img src="img/sub/sub1_3_03.jpg" alt="향수"></p>
+                            <p class="sub01_hover"><img src="img/sub/sub1_3_03-1.jpg" alt="향수"></p>
+                            <div class="sub01_text1">Solid perfumes</div>
+                            <div class="sub01_text2">솔리드퍼퓸 오르페옹 3g</div>
+                            <div class="sub01_text3">￦98,800</div>
+                        </li>
+                        <li>
+                            <p><img src="img/sub/sub1_3_04.jpg" alt="향수"></p>
+                            <p class="sub01_hover"><img src="img/sub/sub1_3_04-1.jpg" alt="향수"></p>
+                            <div class="sub01_text1">Solid perfumes</div>
+                            <div class="sub01_text2">솔리드퍼퓸 오 로즈 3g</div>
+                            <div class="sub01_text3">￦98,800</div>
+                        </li>
+                    </ul>
+                </div><!-- /.sub01_list -->
+
+                <div class="more">more</div>
+
+            </div><!-- /.grid -->
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <div class="footer_top">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <ul class="footer_logo">
+                <li><img src="img/logo_footer.png" alt="딥티크"></li>
+                <li><img src="img/logo_footer02.png" alt="신세계빌리지"></li>
+                <li><img src="img/logo_footer.png" alt="딥티크"></li>
+                <li><img src="img/logo_footer02.png" alt="신세계빌리지"></li>
+                <li><img src="img/logo_footer.png" alt="딥티크"></li>
+                <li><img src="img/logo_footer02.png" alt="신세계빌리지"></li>
+                <li><img src="img/logo_footer.png" alt="딥티크"></li>
+                <li><img src="img/logo_footer02.png" alt="신세계빌리지"></li>
+                <li><img src="img/logo_footer.png" alt="딥티크"></li>
+                <li><img src="img/logo_footer02.png" alt="신세계빌리지"></li>
+                </ul>
+            <div class="line3"></div>
+            <div class="line4"></div>
+        </div>
+        
+        <div class="footer_bottom">
+            <div class="inner">
+                <div class="footer_left">
+                    <div class="call">
+                        <div><img src="img/icon_call.png" alt="전화">&nbsp;1644-4490</div>
+                        <div>평일 09:00 ~ 18:00</div>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li><a href="#">고객센터 </a>&nbsp; | &nbsp;</li>
+                            <li><a href="#">공지사항 </a>&nbsp; | &nbsp;</li>
+                            <li><a href="#">채팅상담 </a>&nbsp; | &nbsp;</li>
+                            <li><a href="#">ARS</a></li>
+                        </ul>
+                        <ol>
+                            <li><a href="#">ABOUT</a></li>&nbsp;&nbsp;&nbsp;
+                            <li><a href="#">회사소개</a></li>&nbsp;&nbsp;&nbsp;
+                            <li><a href="#">매장안내</a></li>&nbsp;&nbsp;&nbsp;
+                            <li><a href="#">입점상담</a></li>&nbsp;&nbsp;&nbsp;
+                            <li><a href="#">개인정보처리방침</a></li>&nbsp;&nbsp;&nbsp;
+                            <li><a href="#">이용약관</a></li>
+                        </ol>
+                </div>
+               </div>
+
+                <div class="sns">
+                    <p><a href="#"><img src="img/icon_instagram.png" alt="인스타그램"></a></p>
+                    <p><a href="#"><img src="img/icon_facebook.png" alt="페이스북"></a></p>
+                    <p><a href="#"><img src="img/icon_youtube.png" alt="유튜브"></a></p>
+                </div>
+             </div>
+        </div>
+    </footer>
+
+    <div class="login">
+        <div class="log_box">
+            <div class="log_close"><img src="img/icon_close.png" alt="닫기"></div>
+            <div class="id">
+                <div>ID</div>
+                <input type="text">
+            </div>
+            <div class="password">
+                <div>PASSWORD</div>
+                <input type="password">
+            </div>
+            <div class="log_search">
+                <div><a href="#">아이디 찾기</a> &nbsp;/&nbsp; <a href="#">비밀번호 찾기</a></div>
+            </div>
+            <div class="log_login">로그인</div>
+            <div class="log_sign_up">회원가입</div>
+            <ul>
+                <li><a href="#"><img src="img/login_google.png" alt="구글"></a></li>
+                <li><a href="#"><img src="img/login_naver.png" alt="네이버"></a></li>
+                <li><a href="#"><img src="img/login_kakaotalk.png" alt="카카오톡"></a></li>
+            </ul>
+        </div><!-- /.log_box -->
+    </div><!-- /.login -->
+
+    <div class="up">
+        <a href="#"><img src="img/icon_up.png" alt="위로"></a>
+    </div>
+
+    <!-- Tablet,Mobile -->
+        
+    <div class="m_gnb">
+        <div class="m_gnb_wrap">
+            <div class="m_gnb_close"><img src="img/icon_big_close.png" alt="닫기"></div>
+            <ul class="m_gnb_list">
+                <li class="m_gnb_line">
+                    <div>
+                        FRAGRANCES
+                        <div class="m_gnb_bar"></div>
+                    </div>
+                    <ol class="m_sub">
+                        <li><a href="sub01.html">전체</a></li>
+                        <li><a href="sub01-1.html">오 드 뚜왈렛</a></li>
+                        <li><a href="sub01-2.html">오 드 퍼퓸</a></li>
+                        <li><a href="sub01-3.html">기타 향수</a></li>
+                    </ol>
+                </li>
+                <li class="m_gnb_line">
+                    <div>
+                        CANDLES&HOME
+                        <div class="m_gnb_bar"></div>
+                    </div>
+                    <ol class="m_sub">
+                        <li><a href="sub02.html">전체</a></li>
+                        <li><a href="sub02-1.html">캔들</a></li>
+                        <li><a href="sub02-2.html">디퓨저</a></li>
+                        <li><a href="sub02-3.html">방향제</a></li>
+                    </ol>
+                    
+                </li>
+                <li class="m_gnb_line">
+                    <div>
+                        HAIR&BODY
+                        <div class="m_gnb_bar"></div>
+                    </div>
+                    <ol class="m_sub">
+                        <li><a href="sub03.html">전체</a></li>
+                        <li><a href="sub03-1.html">에센스 / 오일 / 미스트</a></li>
+                        <li><a href="sub03-2.html">워시 / 스크럽</a></li>
+                        <li><a href="sub03-3.html">로션 / 크림 / 오일</a></li>
+                    </ol>
+                    
+                </li>
+                <li><a href="sub04.html">SERVICE</a></li>
+                <li><a href="sub05.html">ABOUT DIPTYQUE</a></li>
+            </ul>
+            
+        </div>
+        <div class="m_gnb_logo"><img src="img/logo_header.png" alt="딥티크"></div>
+
+        <div class="m_icon">
+            <div><img src="img/icon_mypage.png" alt="마이페이지"></div>
+            <div><img src="img/icon_cart.png" alt="장바구니"></div>
+        </div>
+
+    </div>
+
+    <div class="m_search">
+        <input type="text" class="m_search_line"></input>
+        <img class="m_search_icon" src="img/icon_search.png" alt="검색">
+        <img class="m_search_icon m_search_close" src="img/icon_search_close.png" alt="검색">
+    </div>
+
+    <div class="m_login">
+        <div class="m_login_box">
+            <div class="m_log_close"><img src="img/icon_close.png" alt="닫기"></div>
+            <div class="id">
+                <div>ID</div>
+                <input type="text">
+            </div>
+            <div class="password">
+                <div>PASSWORD</div>
+                <input type="password">
+            </div>
+            <div class="log_search">
+                <div><a href="#">아이디 찾기</a> &nbsp;/&nbsp; <a href="#">비밀번호 찾기</a></div>
+            </div>
+            <div class="log_login">로그인</div>
+            <div class="log_sign_up">회원가입</div>
+            <ul>
+                <li><a href="#"><img src="img/login_google.png" alt="구글"></a></li>
+                <li><a href="#"><img src="img/login_naver.png" alt="네이버"></a></li>
+                <li><a href="#"><img src="img/login_kakaotalk.png" alt="카카오톡"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
+

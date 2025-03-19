@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diptyque</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="icon" href="./img/logo_web.ico">
+
+    <!-- AOS애니메이션 CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Swiper 슬라이드 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <!-- GSAP 라이브러리 설정 -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+</head>
+
+<body >
+
+    <header>
+        <div class="wrap">
+            <ul class="gnb">
+                <li><a href="sub01.html">FRAGRANCES</a>
+                    <div class="gnb_bar1"></div>
+                    <ol class="sub">
+                        <li><a href="sub01-1.html">오 드 뚜왈렛</a></li>
+                        <li><a href="sub01-2.html">오 드 퍼퓸</a></li>
+                        <li><a href="sub01-3.html">기타 향수</a></li>
+                    </ol>
+                </li>
+                    <li>
+                        <a href="sub02.html">CANDLES&HOME</a>
+                        <div class="gnb_bar1"></div>
+                        <ol class="sub">
+                            <li><a href="sub02-1.html">캔들</a></li>
+                            <li><a href="sub02-2.html">디퓨저</a></li>
+                            <li><a href="sub02-3.html">방향제</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="sub03.html">HAIR&BODY</a>
+                        <div class="gnb_bar1"></div>
+                        <ol class="sub">
+                            <li><a href="sub03-1.html">에센스 / 오일 / 미스트</a></li>
+                            <li><a href="sub03-2.html">워시 / 스크럽</a></li>
+                            <li><a href="sub03-3.html">로션 / 크림 / 오일</a></li>
+                        </ol>
+                    </li>
+                <li>
+                    <a href="sub04.html">SERVICE</a>
+                    <div class="gnb_bar2"></div>
+                </li>
+                <li>
+                    <a href="sub05.html">ABOUT DIPTYQUE</a>
+                    <div class="gnb_bar2"></div>
+                </li>
+            </ul><!-- /.gnb -->
+            
+            <!-- m_gnb -->
+             <div class="m_gnb_icon">
+                <p><a href="#"><img src="img/icon_m_gnb.png" alt="모바일메뉴"></a></p>
+             </div>
+
+            <div class="logo"><a href="index.html"><img src="img/logo_header.png" alt="딥티크"></a></div>
+            <div class="icon">
+                <div class="search">
+                    <input type="text" class="search_line"></input>
+                    <img class="search_icon" src="img/icon_search.png" alt="검색">
+                    <img class="search_close" src="img/icon_big_close.png" alt="검색">
+                </div>
+                <div class="mypage"><img src="img/icon_mypage.png" alt="마이페이지"></div>
+                <div class="cart"><img src="img/icon_cart.png" alt="카트"></div>
+            </div>
+        </div><!-- wrap -->
+    </header>
+
+
+
+    <div id="title">
+        <h1>LUXURY&ARTISTIC BRAND,<br><span>DIPTYQUE</span></h1>
+    </div>
+
+    <div id="main_visual">
+        <div class="mv_video" ><video src="img/video/main_visual.mp4" muted autoplay loop></video></div>
+    </div>
+
+
+
+    <main>
+
+        <section id="sec_01">
+            <h1 data-aos="fade-up" data-aos-duration="1000">BEST SELLER</h1>
+            <!-- Slider main container -->
+            <div class="swiper01" data-aos="fade-up" data-aos-offset="350" data-aos-duration="1000">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/sec01_1.jpg" alt="딥티크"></div>
+                    <div class="swiper-slide"><img src="img/sec01_2.jpg" alt="딥티크"></div>
+                    <div class="swiper-slide"><img src="img/sec01_3.jpg" alt="딥티크"></div>
+                    <div class="swiper-slide"><img src="img/sec01_4.jpg" alt="딥티크"></div>
+                    <div class="swiper-slide"><img src="img/sec01_5.jpg" alt="딥티크"></div>
+                    <div class="swiper-slide"><img src="img/sec01_6.jpg" alt="딥티크"></div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </section><!-- /.sec_01 -->
+
+
+
+        <section id="sec_02">
+            <h1 data-aos="fade-up" data-aos-duration="1000">NEW ARRIVAL</h1>
+             <!-- Slider main container -->
+             <div class="swiper02" data-aos="fade-up" data-aos-offset="350" data-aos-duration="1000">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper" >
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/sec02_1.jpg" alt="딥티크"></div>
+                    <div class="swiper-slide"><img src="img/sec02_2.jpg" alt="딥티크"></div>
+                    <div class="swiper-slide"><img src="img/sec02_3.jpg" alt="딥티크"></div>
+                    <div class="swiper-slide"><img src="img/sec02_4.jpg" alt="딥티크"></div>
+                    <div class="swiper-slide"><img src="img/sec02_5.jpg" alt="딥티크"></div>
+                    <div class="swiper-slide"><img src="img/sec02_6.jpg" alt="딥티크"></div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </section><!-- /.sec_02 -->
+
+
+
+        <section id="sec_03">
+            <div class="left_move">
+                <div class="sec03_main">
+
+                    <div class="left_text" data-aos="fade-up" data-aos-offset="450" data-aos-duration="1000">
+                        <h1>GIFT INSPIRATION</h1>
+                        <div>완벽한 선물, 멀리서 찾을 필요 없어요.<br>
+                            딥티크에는 어디에서든 영감이 가득하니까요.<br>
+                            당신의 시선이 머무는 곳에서 특별한 순간이 시작됩니다.<br>
+                            저희가 그 여정을 함께할게요.
+                        </div>
+                    </div>
+                    <p data-aos="fade-up" data-aos-offset="450" data-aos-duration="1000">
+                        <video src ="img/video/sec03_video.mp4" muted autoplay loop></video>
+                    </p>
+
+                    <div class="m_right_text " data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
+                        <h1>THE ART OF<br> <span>THE GIFT</span></h1>
+                        <div>색감과 소재에 대한 감각, 순수한 섬세함의 표현<br>
+                            딥티크의 모든 선물에는 마지막 디테일까지 신경 쓴 <span>정성이 담겨 있습니다</span>
+                        </div>
+                    </div>
+                        
+                </div><!-- /.sec03_main -->
+
+                <div class="right_text " data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
+                    <h1>THE ART OF <span>THE GIFT</span></h1>
+                    <div>색감과 소재에 대한 감각, 순수한 섬세함의 표현<br>
+                        딥티크의 모든 선물에는 마지막 디테일까지 신경 쓴 정<span>성이 담겨 있습니다</span>
+                    </div>
+                </div>
+
+                <div class="sec03_list">
+                    <ul>
+                        <li>
+                            <p><img src="img/sec03_1.jpg" alt="선물"></p>
+                            <div class="text_box">
+                                <div>Diptyque gift box</div>
+                                <div>세련되고 감각적인 딥티크의 선물 박스는<br>
+                                    당신만의 스타일을 담아 완성됩니다.<br>
+                                    고른 실크 페이퍼와 리본이 특별한 터치를 더해,<br>
+                                    선물을 전하는 순간부터 기쁨을 선사합니다.</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p><img src="img/sec03_2.jpg" alt="선물"></p>
+                            <div class="text_box">
+                                <div>Celebrate a birthday</div>
+                                <div>촛불이 빛나고 깜짝 선물이 피어나는 특별한 하루.<br>
+                                    Diptyque와 함께, 기념하는 순간을<br>
+                                    더욱 특별하게 만들어 보세요.</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p><img src="img/sec03_3.jpg" alt="선물"></p>
+                            <div class="text_box">
+                                <div>Build your own gift set</div>
+                                <div>오직 받는 이를 위해 맞춤 제작된 선물 박스.<br>
+                                    딥티크의 캔들부터 오 드 뚜왈렛까지…<br>
+                                    선택은 당신의 몫입니다.<br>
+                                    소중한 이에게 기쁨을 선사하세요.</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p><img src="img/sec03_4.jpg" alt="선물"></p>
+                            <div class="text_box">
+                                <div>Second-life Accessories</div>
+                                <div>세컨드 라이프 액세서리로 새롭게 태어나는<br>
+                                    딥티크 캔들. 다시 쓰일수록 더욱 아름다워지며,<br>
+                                    특별한 매력을 선사합니다.</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- /.sec03_list -->
+            </div>
+        </section><!-- /.sec_03 -->
+
+
+      
+        <section id="sec_04">
+            <div class="inner">
+                <h1 data-aos="fade-up" data-aos-offset="150" data-aos-duration="1000">CANDLE OF THE MONTH</h1>
+                <ul class="sec04_list">
+                    <li data-aos="fade-up-right" data-aos-offset="300" data-aos-duration="1000">
+                        <p><a href="#"><img src="img/sec04_1-1.jpg" alt="캔들"></a></p>
+                        <p><a href="#"><img src="img/sec04_1.jpg" alt="캔들"></a></p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                        <p><a href="#"><img src="img/sec04_2-1.jpg" alt="캔들"></a></p>
+                        <p><a href="#"><img src="img/sec04_2.jpg" alt="캔들"></a></p>
+                    </li>
+                    <li data-aos="fade-up-left" data-aos-offset="300" data-aos-duration="1000">
+                        <p><a href="#"><img src="img/sec04_3-1.jpg" alt="캔들"></a></p>
+                        <p><a href="#"><img src="img/sec04_3.jpg" alt="캔들"></a></p>
+                    </li>
+                    <li>
+                        <div id="sec04_tablet" data-aos="fade-up-left" data-aos-offset="300" data-aos-duration="1000"><a href="#"></a>
+                            <p><img src="img/sec04_tablet1.jpg" alt="캔들"></p>
+                            <p><img src="img/sec04_tablet2.jpg" alt="캔들"></p>
+                            <p><img src="img/sec04_tablet3.jpg" alt="캔들"></p>
+                            <p><img src="img/sec04_tablet4.jpg" alt="캔들"></p>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+        </section><!-- /.sec_04 -->
+
+
+
+        <section id="sec_05">
+            <div class="inner">
+                <div class="sec05_title">
+                    <h1>IMPROVING<br>
+                        OUR IMPACT</h1>
+                    <p>우리는 지구 생태계를 보호할 책임을 깊이 인식하고 있습니다.<br>
+                        딥티크는 환경과 사회에 미치는 영향을 줄이고,<br>
+                        지속 가능한 해결책을 마련하기 위해 끊임없이 노력합니다.</p>
+                </div>
+                <ul class="sec05_list">
+                    <li>
+                        <div class="sec05_box">
+                            <p><img src="img/sec05_1.jpg" alt="딥티크"></p>
+                            <div class="sec05_list_tit">Our ambition</div>
+                        </div>
+                        <div>투명성은 우리 공급업체와의 파트너십에서 핵심 요소입니다. 이를 통해 탄소 발자<br>
+                            국을 줄이고 생물다양성을 보호하는 데 효과적으로 기여할 수 있습니다.
+                            우리는 사<br>
+                            회와 환경에 미치는 영향을 최소화하고,장기적으로 더욱 지속 가능한 모델을 구축
+                            <br>하는 것을 목표로 합니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sec05_box">
+                            <p><img src="img/sec05_2.jpg" alt="딥티크"></p>
+                            <div class="sec05_list_tit">Responsibly Sourced</div>
+                        </div>
+                        <div>우리는 공급망과 유통 과정에 대한 깊은 이해를 바탕으로, 원료의 추적 가능성을<br>
+                            보장합니다. 이것이 곧 지속 가능한 원료 조달을 위한 우리의 약속입니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sec05_box">
+                            <p><img src="img/sec05_3.jpg" alt="딥티크"></p>
+                            <div class="sec05_list_tit">Transparency and<br>
+                                traceability of raw materials</div>
+                        </div>
+                        <div>우리는 완전한 투명성을 추구하며, 원료에 대한 정보를 쉽고 편리하게 제공하기 위<br>
+                            해 노력합니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sec05_box">
+                            <p><img src="img/sec05_4.jpg" alt="딥티크"></p>
+                            <div class="sec05_list_tit">Supporting sustainable<br>
+                                 supply chains</div>
+                        </div>
+                        <div>딥티크는 더 나은 지속 가능한 사회를 만들어가기 위해 노력합니다.자연을 보<br>
+                            호하는 것은 물론, 재배자들의 삶의 질을 향상시키는 다양한 프로젝트를 지원하는<br>
+                            이유도 바로 그것입니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sec05_box">
+                            <p><img src="img/sec05_5.jpg" alt="딥티크"></p>
+                            <div class="sec05_list_tit">Climate action</div>
+                        </div>
+                        <div>딥티크에게 자연은 귀중한 자원이며, 중요한 영감의 원천입니다. 우리는 온실<br>
+                            가스 배출을 줄이고, 기후 변화에 대응하기 위해 적극적으로 노력하고 있습니다.
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section><!-- /.sec_05 -->
+
+        
+    </main>
+
+    <footer>
+        <div class="footer_top">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <ul class="footer_logo">
+                <li><img src="img/logo_footer.png" alt="딥티크"></li>
+                <li><img src="img/logo_footer02.png" alt="신세계빌리지"></li>
+                <li><img src="img/logo_footer.png" alt="딥티크"></li>
+                <li><img src="img/logo_footer02.png" alt="신세계빌리지"></li>
+                <li><img src="img/logo_footer.png" alt="딥티크"></li>
+                <li><img src="img/logo_footer02.png" alt="신세계빌리지"></li>
+                <li><img src="img/logo_footer.png" alt="딥티크"></li>
+                <li><img src="img/logo_footer02.png" alt="신세계빌리지"></li>
+                <li><img src="img/logo_footer.png" alt="딥티크"></li>
+                <li><img src="img/logo_footer02.png" alt="신세계빌리지"></li>
+                </ul>
+            <div class="line3"></div>
+            <div class="line4"></div>
+        </div>
+        
+        <div class="footer_bottom">
+            <div class="inner">
+                <div class="footer_left">
+                    <div class="call">
+                        <div><img src="img/icon_call.png" alt="전화">&nbsp;1644-4490</div>
+                        <div>평일 09:00 ~ 18:00</div>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li><a href="#">고객센터 </a>&nbsp; | &nbsp;</li>
+                            <li><a href="#">공지사항 </a>&nbsp; | &nbsp;</li>
+                            <li><a href="#">채팅상담 </a>&nbsp; | &nbsp;</li>
+                            <li><a href="#">ARS</a></li>
+                        </ul>
+                        <ol>
+                            <li><a href="#">ABOUT</a></li>&nbsp;&nbsp;&nbsp;
+                            <li><a href="#">회사소개</a></li>&nbsp;&nbsp;&nbsp;
+                            <li><a href="#">매장안내</a></li>&nbsp;&nbsp;&nbsp;
+                            <li><a href="#">입점상담</a></li>&nbsp;&nbsp;&nbsp;
+                            <li><a href="#">개인정보처리방침</a></li>&nbsp;&nbsp;&nbsp;
+                            <li><a href="#">이용약관</a></li>
+                        </ol>
+                </div>
+               </div>
+
+                <div class="sns">
+                    <p><a href="#"><img src="img/icon_instagram.png" alt="인스타그램"></a></p>
+                    <p><a href="#"><img src="img/icon_facebook.png" alt="페이스북"></a></p>
+                    <p><a href="#"><img src="img/icon_youtube.png" alt="유튜브"></a></p>
+                </div>
+             </div>
+        </div>
+    </footer>
+
+    <div class="scroll"></div>
+
+    <div class="login">
+        <div class="log_box">
+            <div class="log_close"><img src="img/icon_close.png" alt="닫기"></div>
+            <div class="id">
+                <div>ID</div>
+                <input type="text">
+            </div>
+            <div class="password">
+                <div>PASSWORD</div>
+                <input type="password">
+            </div>
+            <div class="log_search">
+                <div><a href="#">아이디 찾기</a> &nbsp;/&nbsp; <a href="#">비밀번호 찾기</a></div>
+            </div>
+            <div class="log_login">로그인</div>
+            <div class="log_sign_up">회원가입</div>
+            <ul>
+                <li><a href="#"><img src="img/login_google.png" alt="구글"></a></li>
+                <li><a href="#"><img src="img/login_naver.png" alt="네이버"></a></li>
+                <li><a href="#"><img src="img/login_kakaotalk.png" alt="카카오톡"></a></li>
+            </ul>
+        </div><!-- /.log_box -->
+    </div><!-- /.login -->
+
+    <div class="up">
+        <a href="#"><img src="img/icon_up.png" alt="위로"></a>
+    </div>
+
+
+
+    <!-- Tablet,Mobile -->
+    
+    <div class="m_gnb">
+        <div class="m_gnb_wrap">
+            <div class="m_gnb_close"><img src="img/icon_big_close.png" alt="닫기"></div>
+            <ul class="m_gnb_list">
+                <li class="m_gnb_line">
+                    <div>
+                        FRAGRANCES
+                        <div class="m_gnb_bar"></div>
+                    </div>
+                    <ol class="m_sub">
+                        <li><a href="sub01.html">전체</a></li>
+                        <li><a href="sub01-1.html">오 드 뚜왈렛</a></li>
+                        <li><a href="sub01-2.html">오 드 퍼퓸</a></li>
+                        <li><a href="sub01-3.html">기타 향수</a></li>
+                    </ol>
+                </li>
+                <li class="m_gnb_line">
+                    <div>
+                        CANDLES&HOME
+                        <div class="m_gnb_bar"></div>
+                    </div>
+                    <ol class="m_sub">
+                        <li><a href="sub02.html">전체</a></li>
+                        <li><a href="sub02-1.html">캔들</a></li>
+                        <li><a href="sub02-2.html">디퓨저</a></li>
+                        <li><a href="sub02-3.html">방향제</a></li>
+                    </ol>
+                    
+                </li>
+                <li class="m_gnb_line">
+                    <div>
+                        HAIR&BODY
+                        <div class="m_gnb_bar"></div>
+                    </div>
+                    <ol class="m_sub">
+                        <li><a href="sub03.html">전체</a></li>
+                        <li><a href="sub03-1.html">에센스 / 오일 / 미스트</a></li>
+                        <li><a href="sub03-2.html">워시 / 스크럽</a></li>
+                        <li><a href="sub03-3.html">로션 / 크림 / 오일</a></li>
+                    </ol>
+                    
+                </li>
+                <li><a href="sub04.html">SERVICE</a></li>
+                <li><a href="sub05.html">ABOUT DIPTYQUE</a></li>
+            </ul>
+            
+        </div>
+
+        <div class="m_gnb_logo"><img src="img/logo_header.png" alt="딥티크"></div>
+
+        <div class="m_icon">
+            <div><img src="img/icon_mypage.png" alt="마이페이지"></div>
+            <div><img src="img/icon_cart.png" alt="장바구니"></div>
+        </div>
+    
+    </div>
+
+    <div class="m_search">
+        <input type="text" class="m_search_line"></input>
+        <img class="m_search_icon" src="img/icon_search.png" alt="검색">
+        <img class="m_search_icon m_search_close" src="img/icon_search_close.png" alt="검색">
+    </div>
+
+    <div class="m_login">
+        <div class="m_login_box">
+            <div class="m_log_close"><img src="img/icon_close.png" alt="닫기"></div>
+            <div class="id">
+                <div>ID</div>
+                <input type="text">
+            </div>
+            <div class="password">
+                <div>PASSWORD</div>
+                <input type="password">
+            </div>
+            <div class="log_search">
+                <div><a href="#">아이디 찾기</a> &nbsp;/&nbsp; <a href="#">비밀번호 찾기</a></div>
+            </div>
+            <div class="log_login">로그인</div>
+            <div class="log_sign_up">회원가입</div>
+            <ul>
+                <li><a href="#"><img src="img/login_google.png" alt="구글"></a></li>
+                <li><a href="#"><img src="img/login_naver.png" alt="네이버"></a></li>
+                <li><a href="#"><img src="img/login_kakaotalk.png" alt="카카오톡"></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
